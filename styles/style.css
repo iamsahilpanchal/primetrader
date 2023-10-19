@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Disclosure styling */
+.disclosure-slide{
+    color:white;
+    width: 100%;
+    padding: 5px;
+    /* background-image: linear-gradient(225deg,#171717, #001F3F); */
+    background-image: linear-gradient(225deg, #535aee, #9646ee);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+/*navbar styling*/
+.navbar{
+    /* position: fixed; */
+    padding: 20px 0;
+    width: 100%;
+    /* background-color: #171717; */
+    background-image: linear-gradient(225deg,#171717, #001F3F);
+    /* background-image: linear-gradient(225deg, #535aee, #9646ee); */
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color:  white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+.navbar .menu li{
+    list-style: white;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color:  white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li:hover a{
+    color:  #9646ee;
+}
+
+.navbar .login a{
+    display: inline-block;
+    background-image: linear-gradient(to right, #00b67a, #008a5c);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: 0px solid  #9646ee;
+    transition: all 0.3s ease;
+}
+
+/* .navbar .login i{
+    font-size: 20px;
+} */
+
+.navbar .login a:hover{
+    color:  #008a5c;
+    background-image: linear-gradient(to right, #e2e2e2, #ffffff);
+}
+
+
+/*home section styling*/
+.home{
+    padding: 50px 0;
+    background-image: url('../charthome1.png') ;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 70vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 45px;
+    font-weight: 500;
+    display: inline-block;
+    background:  #535beeb0;
+    color: white;
+    font-weight: 500;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+.home .home-content .text-2{
+    font-size: 70px;
+    color: #001F3F;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 50px;
+    font-weight: 500;
+    display: inline-block;
+    background:  #0000003b;
+    color: white;
+    font-weight: 500;
+    padding: 10px 10px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color:  #535aee;
+    font-weight: 600;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background:  #9646ee;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid  #9646ee;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color:  #9646ee;
+    background: none;
+}
+
+
+/* skills section styling */
+.skills{
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(225deg,#171717, #001F3F);
+    color: white;
+}
+
+.skills .title{
+    position: relative;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #9646ee;
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #9646ee;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left .p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background:  #9646ee;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid  #9646ee;
+    transition: all 0.3s ease;    
+}
+
+.skills .skills-content .left a:hover{
+    color:  #9646ee;
+    background: none;
+}
+
+
+.skills .skills-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #9646ee;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .text1{
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.skills .skills-content .right .p{
+    text-align: justify;
+}
+
+/* intro section styling */
+.intro{
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(225deg,#171717, #001F3F);
+    color: white;
+}
+
+.intro .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #9646ee;
+}
+
+.intro .intro-content{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.intro .intro-content .left .text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #9646ee;
+    margin-bottom: 10px;
+}
+
+.intro .intro-content .left .p{
+    text-align: center;
+}
+
+
+
+/*service section styling*/
+.service{
+    color: white;
+    /* background-color: white; */
+    background-image: linear-gradient(300deg, #6b00b7,#6b00b7,#001287);
+    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service .title{
+    position: relative;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.service .service-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.service .service-content .card{
+    width: calc(25% - 15px);
+    /* background: rgba(119, 58, 251, 0.284); */
+    background: rgba(41, 15, 97, 0.329);
+
+    text-align: left;
+    border-radius: 10px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 0px solid rgb(227, 227, 227);
+}
+
+.service .service-content .card:hover{
+    background:  rgba(119, 58, 251, 0.69);
+    border: 0px solid #9646ee;
+}
+
+.service .service-content .card .text{
+    font-size: 20px;
+    color:  #e1e1e1;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.service .service-content .card:hover .text{
+    color: white;
+}
+
+
+.service .service-content .card .text1{
+    color: #001F3F;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    text-decoration: solid;
+}
+
+
+.service .service-content .card p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.service .service-content .card .premiumservice .p{
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.service .service-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.service .service-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+/*about section styling*/
+.about{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #eeeeee; */
+    background-image: linear-gradient(225deg, #e0e0e0, #ffffff);
+    color: black;
+}
+
+.about .title{
+    position: relative;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(225deg, #6b00b7,#001287);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.about .about-content .left img:hover{
+    opacity: 0.7;
+}
+
+.about .about-content .right{
+    width: 50%;
+    color: black;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(225deg, #6b00b7,#001287);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background-image: linear-gradient(to right, #00b67a, #008a5c);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid  #008a5c;
+    transition: all 0.3s ease;    
+}
+
+.about .about-content .right a:hover{
+    color:  #00b67a;
+    border: 1px solid  #008a5c;
+    background-image: linear-gradient(to right, #ffffff, #e2e2e2);
+
+}
+
+.about .about-content .column{
+    width: 50%;
+}
+
+/* contact styling started */
+
+.contact{
+    padding: 65px;
+    background-image: linear-gradient(225deg,#171717, #001F3F);
+}
+
+.contact .form .card {
+    width: 100%;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.contact .form .card h2 {
+    /* color:  white; */
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ba7bff, #747aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+  
+.contact .form .card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 5px;
+}
+  
+.contact .form .card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.3s;
+}
+  
+.contact .form .card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color:  white;
+}
+  
+.contact .form .card .row .form-group input,
+.contact .form .card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 0 10px 20px;
+    border: 2px solid  white;
+    color: white;
+    border-radius: 5px;
+}
+  
+.contact .form .card .row .form-group label {
+    line-height: 40px;
+    color:  white;
+    font-size: 20px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+  
+.contact .form .row .col:nth-child(6) {
+    margin-top: 64px;
+}
+  
+.contact .form .card .row .form-group input:focus,
+.contact .form .card .row .form-group textarea:focus {
+    border: 2px solid  #9646ee;
+    transition: all 0.3s;
+}
+  
+.contact .form .card .row input[type="submit"] {
+    border: 0px solid  #747aff;
+    padding: 10px;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:  #747aff;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+  
+.contact .form .card .row input[type="submit"]:hover {
+    border: 0px solid  #747aff;
+    background-color: white;
+    color:  #747aff;
+    transition: all 0.3s;
+}
+
+.contact .contact-text{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact .contact-text a{
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ba7bff, #747aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+
+/* .contact .contact-text a:hover{
+    color:  black;
+} */
+
+/* footer styling started */
+footer{
+    background-image: linear-gradient(225deg, #535aee, #9646ee);    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+}
+
+footer span{
+    color:  white;
+}
